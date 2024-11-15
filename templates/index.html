@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiTrader</title>
+</head>
+<body>
+    <h1>Enter ML Model Text</h1>
+    <form action="/predict" method="post">
+        <label for="ticker">Ticker Symbol:</label>
+        <input type="text" id="ticker" name="ticker" required><br><br>
+
+        <label for="start_date">Start date ('1997-09-12')</label>
+        <input type="date" id="start_date" name="start_date" required lang="en-GB"><br><br>
+
+        <label for="end_date">End date ('2023-09-12')</label>
+        <input type="date" id="end_date" name="end_date" required lang="en-GB"><br><br>
+
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
